@@ -1,0 +1,18 @@
+<h1>Car CAR Town</h1>
+<ul>
+  @{ var x = 0; }
+  @foreach(var car in Model)
+  {
+    x++;
+    <li>CAR CAR @x <br>
+    @car.GetBrand() <br>
+    @car.GetModel()<br>
+    @car.GetYear()<br>
+    @car.GetMileage()</li>
+  }
+</ul>
+<p><a href="/car/new">Add another car car</a></p>
+
+<form action="/car/delete" method="post">
+  <button type="submit" name="button">Clear All Car Cars</button>
+</form>
